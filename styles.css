@@ -316,6 +316,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .job-body { color: var(--ink-soft); max-width: var(--measure); }
+.job-body strong { color: var(--ink); font-weight: 600; }
 
 .job-metrics {
   margin-top: 0.75rem;
