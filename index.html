@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Tibrewal — Product Engineer</title>
+  <meta name="description" content="Product engineer with ~4 years shipping 0→1 products end to end — lately applied AI: document pipelines, LLM extraction, evals. Python, FastAPI, PostgreSQL, GCP.">
+  <meta property="og:title" content="Aman Tibrewal — Product Engineer">
+  <meta property="og:description" content="~4 years shipping 0→1 products end to end. Lately applied AI — and I write the eval before I trust the model.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amantibrewal310.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='11' width='28' height='11' rx='2' fill='%23FFE264'/%3E%3Cpath d='M7 16h18' stroke='%2316150F' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top">a.tibrewal</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO: source document → extracted profile ============ -->
+    <section class="hero" aria-label="Introduction">
+      <p class="hero-eyebrow"><span class="file-in">resume.pdf</span> <span class="arrow" aria-hidden="true">⟶</span> <span class="file-out">profile.json</span> <span class="hero-status" id="hero-status">extracting…</span></p>
+
+      <div class="hero-grid">
+        <div class="source-doc">
+          <h1 class="hero-name">Aman Tibrewal</h1>
+          <p class="hero-role">Product Engineer · Bangalore</p>
+          <p class="hero-copy">
+            I've spent <mark class="hl" data-field="experience">about four years</mark> shipping
+            <mark class="hl" data-field="ships">0→1 products end to end</mark> at
+            <mark class="hl" data-field="company">Ivy Homes (YC&nbsp;W21)</mark> — from the product
+            question down to the
+            <mark class="hl" data-field="stack">backend and infrastructure</mark> underneath.
+          </p>
+          <p class="hero-copy">
+            The recent chapter is <mark class="hl" data-field="focus">applied AI</mark> — document
+            pipelines, LLM extraction, matching engines — approached the same way:
+            <mark class="hl" data-field="grounding">strong CS fundamentals</mark>, and
+            <mark class="hl hl-strong" data-field="principle">I write the eval before I trust the model.</mark>
+          </p>
+          <p class="hero-hint" aria-hidden="true">Hover a field on the right — every value has a source span.</p>
+        </div>
+
+        <figure class="extract-card" aria-label="Profile extracted as structured data">
+          <figcaption class="extract-head">
+            <span class="dot" aria-hidden="true"></span>
+            structured output <span class="extract-check">✓ schema valid</span>
+          </figcaption>
+          <pre class="extract-body" id="extract-json"><code><span class="line">{</span><span class="line">  <span class="k">"name"</span>: <span class="v">"Aman Tibrewal"</span>,</span><span class="line">  <span class="k">"role"</span>: <span class="v">"Product Engineer"</span>,</span><button class="field-line" data-field="experience">  <span class="k">"experience"</span>: <span class="v">"~4 years"</span>,</button><button class="field-line" data-field="company">  <span class="k">"company"</span>: <span class="v">"Ivy Homes (YC W21)"</span>,</button><button class="field-line" data-field="ships">  <span class="k">"ships"</span>: <span class="v">"0→1, end to end"</span>,</button><button class="field-line" data-field="focus">  <span class="k">"recent_focus"</span>: [<span class="v">"document AI"</span>, <span class="v">"RAG"</span>, <span class="v">"evals"</span>],</button><button class="field-line" data-field="stack">  <span class="k">"stack"</span>: [<span class="v">"Python"</span>, <span class="v">"FastAPI"</span>, <span class="v">"PostgreSQL"</span>, <span class="v">"GCP"</span>],</button><button class="field-line" data-field="grounding">  <span class="k">"grounding"</span>: <span class="v">"CS fundamentals"</span>,</button><button class="field-line" data-field="principle">  <span class="k">"principle"</span>: <span class="v">"eval first, then trust"</span></button><span class="line">}</span></code></pre>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section" id="work">
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-sub">Production systems at Ivy Homes. Every case ships with the number it moved.</p>
+
+      <article class="case">
+        <div class="case-main">
+          <p class="case-label">document AI</p>
+          <h3 class="case-title">Legal Copilot</h3>
+          <p class="case-body">
+            An AI product on <strong>Claude and FastAPI</strong> that reads 15+ bilingual
+            English / Kannada documents per case to verify property titles and draft sale
+            agreements. I owned the full pipeline: retrieval vs. long-context tradeoffs,
+            validated JSON outputs, and prompt-injection defense for untrusted documents.
+          </p>
+        </div>
+        <dl class="case-metrics">
+          <div class="metric"><dt>review_time</dt><dd><s>5 hours</s> → <em>30 min</em></dd></div>
+          <div class="metric"><dt>docs_per_case</dt><dd>15+</dd></div>
+          <div class="metric"><dt>languages</dt><dd>English · Kannada</dd></div>
+        </dl>
+      </article>
+
+      <article class="case">
+        <div class="case-main">
+          <p class="case-label">data + LLM pipeline</p>
+          <h3 class="case-title">15M-record property intelligence</h3>
+          <p class="case-body">
+            Scraped 15M+ Mumbai property records to full coverage despite IP-based rate
+            limits — after finding an undocumented search API that collapsed the request
+            volume. Prompt-engineered and fine-tuned LLMs then extract and classify entities
+            for the pricing engine, inside a hard per-record cost budget despite Marathi's
+            higher token cost.
+          </p>
+        </div>
+        <dl class="case-metrics">
+          <div class="metric"><dt>records</dt><dd>15M+</dd></div>
+          <div class="metric"><dt>coverage</dt><dd>100%</dd></div>
+          <div class="metric"><dt>field_accuracy</dt><dd>95%</dd></div>
+        </dl>
+      </article>
+
+      <article class="case">
+        <div class="case-main">
+          <p class="case-label">sales intelligence</p>
+          <h3 class="case-title">Ivy Hub</h3>
+          <p class="case-body">
+            Built from scratch — <strong>Next.js, FastAPI, PostgreSQL, Redis</strong> — with a
+            two-way engine matching buyers to properties and LLM analysis of site-visit
+            feedback, so the sales team hears what buyers actually said.
+          </p>
+        </div>
+        <dl class="case-metrics">
+          <div class="metric"><dt>monthly_sales</dt><dd><em>+10%</em></dd></div>
+          <div class="metric"><dt>built_from</dt><dd>zero</dd></div>
+        </dl>
+      </article>
+
+      <article class="case">
+        <div class="case-main">
+          <p class="case-label">solo shipping · cost · reliability</p>
+          <h3 class="case-title">Three products, one engineer</h3>
+          <p class="case-body">
+            Shipped <a href="https://ivy.homes/home-lens">HomeLens</a> (two-step property
+            valuation), the Clue Homes app (a one-month MVP that drew inbound interest from
+            Aditya Birla), and Open House (offline acquisition leads) end to end as the only
+            engineer. Along the way: hybrid map providers, Redis caching, request batching,
+            and query tuning across services on GCP.
+          </p>
+        </div>
+        <dl class="case-metrics">
+          <div class="metric"><dt>api_spend</dt><dd><em>−75%</em></dd></div>
+          <div class="metric"><dt>latency</dt><dd>−30%</dd></div>
+          <div class="metric"><dt>uptime</dt><dd>99.9%</dd></div>
+        </dl>
+      </article>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <ol class="jobs">
+        <li class="job">
+          <p class="job-when">Jan 2023 — present</p>
+          <div>
+            <h3 class="job-title">Software Engineer III · <a href="https://ivy.homes">Ivy Homes</a> <span class="job-tag">YC W21</span></h3>
+            <p class="job-body">
+              Everything above, plus mentoring 10+ engineers on Python, API and database
+              design, and applied-LLM patterns.
+            </p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-when">Aug — Dec 2022</p>
+          <div>
+            <h3 class="job-title">Software Engineer · Udaan</h3>
+            <p class="job-body">
+              Automation pipelines with the Specification pattern that cut query-to-resolution
+              time; priority-routed email alerts that cut first response time by 25%.
+              Kotlin, React, CosmosDB, Azure.
+            </p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-when">2018 — 2022</p>
+          <div>
+            <h3 class="job-title">B.Tech, Electronics &amp; Communication · NIT Allahabad</h3>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Open source &amp; projects</h2>
+      <div class="projects-grid">
+        <a class="project" href="https://github.com/amantibrewal310">
+          <h3 class="project-title">doc-eval</h3>
+          <p class="project-body">
+            An eval harness for document extraction: per-field precision, recall, and F1
+            across models, with cost and latency per run. Includes an LLM-as-judge calibrated
+            against human labels. Python, Anthropic API.
+          </p>
+          <p class="project-cta">github ↗</p>
+        </a>
+        <a class="project" href="https://github.com/amantibrewal310">
+          <h3 class="project-title">Vita</h3>
+          <p class="project-body">
+            A full-stack video streaming platform: subscription billing, admin dashboard,
+            analytics, role-based access. Django REST Framework, React, PostgreSQL, S3,
+            Braintree.
+          </p>
+          <p class="project-cta">github ↗</p>
+        </a>
+      </div>
+
+      <div class="skills">
+        <div class="skill-row"><h3 class="skill-key">ai / llms</h3><p class="skill-val">Claude · OpenAI · RAG · fine-tuning · evals · agents &amp; tool use · structured outputs · vision-based extraction · cost &amp; latency tuning</p></div>
+        <div class="skill-row"><h3 class="skill-key">backend</h3><p class="skill-val">Python · FastAPI · Django DRF · Node.js · TypeScript · GraphQL · microservices</p></div>
+        <div class="skill-row"><h3 class="skill-key">data</h3><p class="skill-val">PostgreSQL · Redis · MongoDB · Firestore</p></div>
+        <div class="skill-row"><h3 class="skill-key">cloud</h3><p class="skill-val">GCP (Cloud Run · Cloud SQL · Pub/Sub) · AWS · Docker · CI/CD</p></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-copy">
+        Building something where <mark class="hl">LLMs meet real users</mark>? I'd like to hear about it.
+      </p>
+      <ul class="contact-links">
+        <li><a href="mailto:amantibrewal310@gmail.com">amantibrewal310@gmail.com</a></li>
+        <li><a href="https://github.com/amantibrewal310">github</a></li>
+        <li><a href="https://linkedin.com/in/amantibrewal310">linkedin</a></li>
+        <li><a href="https://twitter.com/amantibrewal310">twitter</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Aman Tibrewal · set in IBM Plex · no trackers, no cookies</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
